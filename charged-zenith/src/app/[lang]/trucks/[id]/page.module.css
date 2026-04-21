@@ -1,0 +1,229 @@
+.main {
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 3rem 0;
+}
+
+.headerInfo {
+  max-width: 700px;
+}
+
+.brandBadge {
+  color: var(--primary);
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--muted-foreground);
+  font-weight: 600;
+}
+
+.price {
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.headerActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.shareBtn {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  transition: background 0.2s ease;
+}
+
+.shareBtn:hover {
+  background: var(--muted);
+}
+
+.contactBtn {
+  background: var(--primary);
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.viewerSection {
+  margin-bottom: 4rem;
+}
+
+.viewerHeader {
+  margin-bottom: 1.5rem;
+}
+
+.viewerHeader h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 4rem;
+}
+
+.specsSection h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.specsTable {
+  border-top: 1px solid var(--border);
+  margin-bottom: 3rem;
+}
+
+.specRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.specKey {
+  color: var(--muted-foreground);
+  font-weight: 500;
+}
+
+.specValue {
+  font-weight: 700;
+}
+
+.featuresList h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.featuresList ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.featuresList li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+}
+
+.featuresList li svg {
+  color: var(--primary);
+}
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inquiryCard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+
+.inquiryCard h3 {
+  margin-bottom: 1rem;
+}
+
+.inquiryCard p {
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.sidebarActions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sideBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--muted);
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.sideBtn:hover {
+  background: var(--border);
+}
+
+.videoCard {
+  background: var(--secondary);
+  color: var(--background);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.videoPreview {
+  aspect-ratio: 16/9;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.videoContent {
+  padding: 1.5rem;
+}
+
+.videoContent h4 {
+  margin-bottom: 0.5rem;
+}
+
+.videoContent p {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .featuresList ul {
+    grid-template-columns: 1fr;
+  }
+}

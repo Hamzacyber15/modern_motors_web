@@ -1,0 +1,1 @@
+className: from-[var(--background)] 

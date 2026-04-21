@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "title": "Powering Oman's Transport المستقبل",
+    "subtitle": "Discover the ultimate digital showroom for high-end heavy-duty machines. Engineering mastery from China, delivered with Omani excellence.",
+    "cta_explore": "Explore Fleet",
+    "cta_dossier": "Fleet Brochure"
+  },
+  "nav": {
+    "home": "Showroom",
+    "trucks": "Fleet",
+    "service": "Maintenance Garaje",
+    "gallery": "Gallery",
+    "media": "Media",
+    "news": "Showroom News",
+    "contact": "Contact",
+    "switch_lang": "العربية"
+  },
+  "maintenance": {
+    "title": "INDUSTRIAL EXCELLENCE",
+    "subtitle": "GLOBAL PRECISION MAINTENANCE",
+    "description": "Our Maintenance Garaje is where engineering mastery meets Omani dedication. We ensure your fleet operates at the pinnacle of performance with absolute precision and unmatched nationwide support.",
+    "stats": [
+      { "label": "Diagnostics", "value": "100% Digital" },
+      { "label": "Engine Mastery", "value": "Expert Certified" },
+      { "label": "Global Standards", "value": "ISO 9001" }
+    ],
+    "services": [
+      { "title": "Precision Overhaul", "desc": "Deep mechanical restoration using factory-spec precision tools for maximum lifespan." },
+      { "title": "Dynamic Balancing", "desc": "High-speed drive shaft and wheel balancing for extreme industrial endurance." },
+      { "title": "Fluid Analysis", "desc": "Scientific oil and coolant spectrometry to predict component life and prevent downtime." },
+      { "title": "Electronic Calibration", "desc": "Zero-error ECU and sensor tuning for optimal fuel efficiency and power delivery." }
+    ],
+    "location_title": "Nationwide Reach",
+    "location_desc": "Strategically positioned across the Sultanate—from Muscat to Salalah—to keep your business moving 24/7."
+  },
+  "features": {
+    "title": "TECHNICAL SUPREMACY",
+    "subtitle": "Unmatched nationwide support and precision maintenance for your high-performance fleet.",
+    "hotspot_1_title": "Digital Glass Cockpit",
+    "hotspot_1_desc": "Ultra-sharp 12.3-inch instrumentation with multi-mode telematics.",
+    "hotspot_2_title": "Command Steering",
+    "hotspot_2_desc": "Integrated media and cruise controls with premium tactile response.",
+    "hotspot_3_title": "Omani AC Tech",
+    "hotspot_3_desc": "Rapid-cool dual-zone climate mastery for extreme thermal comfort.",
+    "hotspot_4_title": "Pilot Endurance",
+    "hotspot_4_desc": "Air-suspended throne designed for 24-hour industrial operation.",
+    "hotspot_5_title": "Air Brake Command",
+    "hotspot_5_desc": "Industrial parking and trailer brake valves for absolute security.",
+    "hotspot_6_title": "Mechanical Diff Locks",
+    "hotspot_6_desc": "Multi-stage differential locking for extreme terrain traction."
+  },
+  "categories": {
+    "title": "ELITE FLEET CATEGORIES",
+    "light": "Light Duty",
+    "medium": "Medium Duty",
+    "heavy": "Heavy Duty",
+    "dump": "Dump Trucks"
+  }
+}
