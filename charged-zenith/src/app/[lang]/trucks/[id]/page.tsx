@@ -1,8 +1,15 @@
-import { getTruckById } from '@/services/trucks'
+import { getTruckById, mockTrucks } from '@/services/trucks'
 import { getDictionary } from '@/lib/get-dictionary'
 import { Locale } from '@/lib/i18n-config'
 import TruckDetailClient from '@/components/TruckDetailClient'
 import { notFound } from 'next/navigation'
+
+export async function generateStaticParams() {
+  return mockTrucks.flatMap((truck) => [
+    { lang: 'en', id: truck.id },
+    { lang: 'ar', id: truck.id },
+  ])
+}
 
 export default async function TruckPage({
   params,

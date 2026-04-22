@@ -5,16 +5,13 @@ import FleetClient from '@/components/FleetClient'
 
 export default async function TrucksPage({
   params,
-  searchParams,
 }: {
   params: Promise<{ lang: Locale }>
-  searchParams: Promise<{ cat?: string }>
 }) {
   const { lang } = await params
-  const { cat } = await searchParams
   
-  const trucks = await getTrucks(cat)
+  const trucks = await getTrucks()
   const dict = await getDictionary(lang)
 
-  return <FleetClient lang={lang} dict={dict} trucks={trucks} initialCategory={cat} />
+  return <FleetClient lang={lang} dict={dict} trucks={trucks} initialCategory="all" />
 }
