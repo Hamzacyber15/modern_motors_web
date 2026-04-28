@@ -209,7 +209,7 @@ export default function TruckDetailClient({ lang, dict, truck }: TruckDetailClie
       <section className="bg-transparent py-32 border-y border-white/5">
          <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-               <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+               <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "300px" }}>
                   <span className="text-primary font-industrial text-xl font-black tracking-[0.6em] uppercase flex items-center gap-6 mb-12">
                     <div className="h-[2px] w-16 bg-primary" />
                     TECHNICAL OVERVIEW
@@ -237,7 +237,7 @@ export default function TruckDetailClient({ lang, dict, truck }: TruckDetailClie
                <motion.div 
                  initial={{ opacity: 0, scale: 0.8 }} 
                  whileInView={{ opacity: 1, scale: 1 }}
-                 viewport={{ once: true }}
+                 viewport={{ once: true, margin: "300px" }}
                  className="relative group"
                >
                   <div className="absolute inset-0 bg-primary/20 blur-[120px] rounded-full scale-75 animate-pulse" />

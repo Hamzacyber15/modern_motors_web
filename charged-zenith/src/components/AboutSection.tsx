@@ -22,6 +22,7 @@ export default function AboutSection() {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "300px" }}
             transition={{ duration: 1 }}
           >
             <span className="text-primary font-industrial text-sm font-black tracking-[0.5em] uppercase">
@@ -66,6 +67,7 @@ export default function AboutSection() {
                     key={i}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "300px" }}
                     transition={{ delay: i * 0.1 }}
                     className="p-6 bg-[var(--background)]/90 border border-[var(--border-color)] rounded-2xl flex flex-col items-center justify-center min-w-[150px] shadow-2xl"
                   >

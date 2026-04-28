@@ -163,6 +163,7 @@ export default function HomeClient({ lang, dict }: HomeClientProps) {
               className="text-primary font-industrial text-sm font-black tracking-[0.5em] uppercase"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "300px" }}
             >
               {dict.categories.title}
             </motion.span>
@@ -170,6 +171,7 @@ export default function HomeClient({ lang, dict }: HomeClientProps) {
               className="mt-4 text-5xl md:text-7xl font-industrial font-black text-[var(--foreground)] italic uppercase"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "300px" }}
             >
               DOMINATE THE ROAD
             </motion.h2>
@@ -186,13 +188,15 @@ export default function HomeClient({ lang, dict }: HomeClientProps) {
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.1 }}
+                  viewport={{ once: true, margin: "300px" }}
+                  transition={{ delay: i * 0.1, duration: 0.5 }}
                   className="group relative h-[500px] bg-[var(--foreground)]/5 border border-[var(--border-color)] rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 hover:border-primary/40 shadow-2xl"
                 >
                   <Image 
                     src={cat.img} 
                     alt={cat.name} 
                     fill 
+                    sizes="(max-width: 768px) 100vw, 25vw"
                     className="object-cover opacity-100 group-hover:scale-110 transition-all duration-700 image-pop" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-secondary/40 via-transparent to-transparent" />
@@ -223,7 +227,8 @@ export default function HomeClient({ lang, dict }: HomeClientProps) {
           <motion.div
             initial={{ opacity: 0, x: isAr ? 50 : -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+            viewport={{ once: true, margin: "300px" }}
+            transition={{ duration: 0.8 }}
           >
             <span className="text-primary font-industrial text-sm font-black tracking-[0.5em] uppercase">{dict.features.title}</span>
             <h2 className="mt-6 text-6xl font-industrial font-black italic uppercase leading-none">

@@ -24,6 +24,7 @@ export default function GallerySection() {
               className="text-primary font-industrial text-sm font-black tracking-[0.5em] uppercase"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "300px" }}
             >
               PREMIUM GALLERY
             </motion.span>
@@ -31,6 +32,7 @@ export default function GallerySection() {
               className="mt-6 text-6xl font-industrial font-black text-[var(--foreground)] italic tracking-tight uppercase"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "300px" }}
             >
               CAPTURING <br /> <span className="text-outline">EXCELLENCE</span>
             </motion.h2>
@@ -46,6 +48,7 @@ export default function GallerySection() {
               key={item.id}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, margin: "300px" }}
               transition={{ delay: i * 0.1 }}
               className={`group relative rounded-[2rem] overflow-hidden bg-[var(--foreground)]/5 border border-[var(--border-color)] transition-all duration-500 hover:border-primary/40 ${
                 item.size === 'large' ? 'md:row-span-2 md:col-span-2' : 

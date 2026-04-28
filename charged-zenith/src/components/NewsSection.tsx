@@ -36,6 +36,7 @@ export default function NewsSection() {
               key={item.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "300px" }}
               transition={{ delay: i * 0.1 }}
               className="group cursor-pointer"
             >

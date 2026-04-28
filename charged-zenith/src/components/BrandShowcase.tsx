@@ -34,6 +34,7 @@ export default function BrandShowcase() {
           className="text-primary font-industrial text-[10px] font-black tracking-[0.8em] uppercase mb-12 block"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "300px" }}
         >
           MAJESTIC PARTNERSHIPS
         </motion.span>
@@ -44,6 +45,7 @@ export default function BrandShowcase() {
               key={brand.name}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 0.5, scale: 1 }}
+              viewport={{ once: true, margin: "300px" }}
               whileHover={{ opacity: 1, scale: 1.1, filter: `drop-shadow(0 0 20px var(--primary-glow))` }}
               transition={{ delay: i * 0.1 }}
               className="relative w-32 md:w-48 h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer"

@@ -15,6 +15,7 @@ export default function ContactSection() {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "300px" }}
             transition={{ duration: 1 }}
           >
             <span className="text-primary font-industrial text-sm font-black tracking-[0.5em] uppercase px-4 py-1 bg-primary/10 border border-primary/20 rounded-full">
@@ -54,6 +55,7 @@ export default function ContactSection() {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "300px" }}
             transition={{ duration: 1 }}
             className="relative group"
           >
